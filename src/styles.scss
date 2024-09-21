@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1{
+  @apply text-6xl font-semibold tracking-wide text-center mb-5 leading-tight;
+}
+
+input{
+  @apply w-full mb-5 border shadow appearance-none rounded py-2 px-3 border-gray-300 focus:outline-none focus:border-blue-500 focus:shadow-blue-500 transition-all duration-200;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
